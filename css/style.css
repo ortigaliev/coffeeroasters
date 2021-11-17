@@ -53,11 +53,13 @@ html{
 body{
   display: flex;
   flex-direction: column;
-  height: 100%;
+  width: 100%;
+  max-width: 1440px;
   margin: 0;
   padding: 0;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 16px;
-  line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
   background-color: var(--bg-color);
   color: var(--text);
@@ -70,30 +72,25 @@ img{
 
 
 /* CONTAINER*/
-.container{
+/* .container{
   width: 100%;
   max-width: 1200px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* MAIN CONTENT */
 .main-content{
   flex-grow: 1;
+
 }
 
 
 /* SITE-HEADER */
 .site-header-wrapper {
-  width: 100%;
-  max-width: 1440px;
-  height: 800px;
-  margin: 0;
-  padding: 0;
-  margin-right: auto;
-  margin-left: auto;
+
   background-color: var(--header-bg);
 }
 .site-header {
@@ -108,10 +105,10 @@ img{
   text-decoration: none;
 }
 .site-logo-link:hover{
-opacity: 0.8;
+  opacity: 0.8;
 }
 .site-logo-link:active{
-opacity: 0.6;
+  opacity: 0.6;
 }
 .site-logo-img {
 }
@@ -146,6 +143,7 @@ opacity: 0.6;
   opacity: 0.6;
 }
 .site-hero {
+
   display: flex;
   align-items: flex-start;
 }
@@ -155,7 +153,6 @@ opacity: 0.6;
   padding-top: 156px;
   margin-right: 116px;
   margin-left: 150px;
-  padding-bottom: 250px;
 
 }
 .hero-heading {
@@ -199,4 +196,45 @@ opacity: 0.6;
   height: 696px;
   margin: 0;
   padding: 0;
+}
+
+/* FOOTER */
+.site-footer {
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 50px;
+  background-color: var(--header-bg);
+}
+.site-footer-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 65px;
+
+}
+.site-logo-link {
+}
+.site-logo-img {
+}
+.footer-sitenav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.site-footer-social-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.site-footer-social-link{
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+.site-footer-social-item{
+  width: 30px;
+  height: 30px;
+}
+.site-footer-social-item:not(:last-child){
+  margin-right: 30px;
 }
