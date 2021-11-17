@@ -94,7 +94,6 @@ img{
   padding: 0;
   margin-right: auto;
   margin-left: auto;
-  height: 800px;
   background-color: var(--header-bg);
 }
 .site-header {
