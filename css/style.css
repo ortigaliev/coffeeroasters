@@ -33,7 +33,7 @@
   --button-bg: #0a775f;
   --collection-bg: #f8f8f2;
   --whyus-bg: #c99b67;
-  --text: #000;
+  --text-color: #000;
 }
 
 /* GLOBAL STYLES */
@@ -237,4 +237,70 @@ img{
 }
 .site-footer-social-item:not(:last-child){
   margin-right: 30px;
+}
+
+
+/* FEATURE-SECTIONS */
+.feature-sections {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0;
+}
+.collection-card {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--collection-bg);
+}
+.collection-card-title {
+  font-size: 50px;
+  line-height: 58px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+.collection-type-wrapper {
+  padding-top: 80px;
+  padding-right: 143px;
+  padding-left: 143px;
+}
+.collection-type-content {
+  display: flex;
+  align-items: center;
+}
+.collection-item-info-card{
+  margin-right: 117px;
+
+}
+.collection-item-img {
+  display: block;
+}
+.collection-item-img:first-child{
+  margin-right: 117px;
+}
+.collection-item-img:nth-child(3){
+  margin-right: 117px;
+}
+
+.collection-item-name {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  color: #333;
+  text-transform: uppercase;
+}
+.collection-item-info {
+  width: 400px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 34px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  color: #333;
 }
