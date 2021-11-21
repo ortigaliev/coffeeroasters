@@ -294,8 +294,13 @@ img{
 /* WHY CHOOSE US */
 .choice-section {
   height: 912px;
-  background-color: var(--whyus-bg);
+  background-image: url(../img/feature-section-bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  content:"";
   margin: 20px;
+  margin-top: 0;
   margin-bottom: 60px;
 }
 .choice-section-heading {
@@ -321,11 +326,11 @@ img{
 .choice-section-img-wrapper {
   display: flex;
   align-items: center;
-
   margin-right: 30px;
   margin-left: 30px;
 }
 .choice-section-img-card {
+  display: block;
   width: 433px;
   height: 629px;
   margin-bottom: 80px;
@@ -358,6 +363,61 @@ img{
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   color: #333;
+}
+
+
+/* TRIPLE-GREEN-GRID */
+.triple-green-grid-wrapper{
+  height: 826px;
+  background-image: url(../img/triple-green-bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  content:"";
+}
+.triple-green-grid-heading {
+  padding-top: 50px;
+  margin-bottom: 80px;
+  font-size: 50px;
+  line-height: 58px;
+  font-weight: 700;
+  font-family: "Roboto", "Arial", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.triple-green-grid-card {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.triple-green-grid-item {
+  width: 433px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 20px);
+  border: 1px solid #000;
+  background-color: #F8F8F2;
+}
+.grid-item-number {
+  padding: 20px;
+  font-size: 64px;
+  line-height: 75px;
+  margin-bottom: 45px;
+  text-align: right;
+}
+.triple-green-grid-item-heading {
+}
+.triple-green-grid-item-text {
+}
+.tripple-green-grid-link {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.pr-button {
 }
 
 
