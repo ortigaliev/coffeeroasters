@@ -32,7 +32,7 @@
   --cornsilk-color: #f3d7b7;
   --button-bg: #0a775f;
   --collection-bg: #f8f8f2;
-  --whyus-bg: #c99b67;
+  --carrot-color: #c99b67;
   --text-color: #000;
 }
 
@@ -252,15 +252,7 @@ img{
 .collection-item-img {
   display: block;
 }
-.collection-type-content-before::before {
-  width: 400px;
-  height: 300px;
-  background-image: url(../img/danche-befor-img.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0 0;
-  content:"";
-}
+
 .collection-item-img:first-child{
   margin-right: 117px;
 }
@@ -393,31 +385,58 @@ img{
   padding-right: 30px;
 }
 .triple-green-grid-item {
-  width: 433px;
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: 20px 28px 40px 20px;
   width: calc(100% / 3 - 20px);
   border: 1px solid #000;
   background-color: #F8F8F2;
 }
+.triple-green-grid-item ::before{
+  width: 30px;
+	height: 30px;
+	border: 5px solid red;
+	background-color: #222;
+	content: "";
+}
 .grid-item-number {
-  padding: 20px;
   font-size: 64px;
   line-height: 75px;
   margin-bottom: 45px;
   text-align: right;
+  color: #333;
+  opacity: 0.8;
 }
 .triple-green-grid-item-heading {
+  width: 241px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 500;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #333;
+  text-transform: uppercase;
 }
 .triple-green-grid-item-text {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #333;
+
 }
 .tripple-green-grid-link {
   display: inline-block;
+  padding: 16px 24px;
   margin-top: 60px;
   margin-bottom: 50px;
-}
-.pr-button {
+  margin-left: 604px;
+  background-color: var(--carrot-color);
 }
 
 
