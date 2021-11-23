@@ -84,9 +84,7 @@ img{
 /* MAIN CONTENT */
 .main-content{
   flex-grow: 1;
-  margin-bottom: 107px;
-
-
+  margin-bottom: 57px;
 }
 
 
@@ -438,14 +436,13 @@ img{
   position: absolute;
   padding-bottom: 20px;
   left: 0;
-  top: -15%;
+  top: -75px;
   width: 60px;
   height: 60px;
   background-color: #f8f8f2;
   border: 4px solid #c99b67;
   content:"";
 }
-
 
 
 /* FOOTER */
