@@ -173,8 +173,8 @@ only screen and (                min-resolution: 2dppx) {
 
 .hero-content {
   width: 100%;
-  max-width: 464px;
-  padding-top: 156px;
+  max-width: 730px;
+  padding-top: 116px;
   margin-right: 116px;
   margin-left: 150px;
 
@@ -196,7 +196,7 @@ only screen and (                min-resolution: 2dppx) {
   color:var(--text);
 }
 .pr-button{
-  isplay: inline-block;
+  display: inline-block;
   padding: 16px 24px;
   border-radius: 100px;
   text-decoration: none;
@@ -222,6 +222,10 @@ only screen and (                min-resolution: 2dppx) {
   height: 696px;
   margin: 0;
   padding: 0;
+}
+
+.hero-img-index{
+height: 696px;
 }
 
 /* FEATURE-SECTIONS */
