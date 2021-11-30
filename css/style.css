@@ -207,6 +207,7 @@ only screen and (                min-resolution: 2dppx) {
   font-weight: 500;
   color: #fff;
   background-color: var(--accent-color-green);
+  white-space: nowrap;
 }
 
 
