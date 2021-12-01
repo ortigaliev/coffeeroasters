@@ -31,7 +31,7 @@
   --bg-color: #e5e5e5;
   --cornsilk-color: #f3d7b7;
   --accent-color-green: #0a775f;
-  --collection-bg: #f8f8f2;
+  --light-bg: #f8f8f2;
   --carrot-color: #c99b67;
   --text-color: #000;
   --outline-color: var(--accent-color-green);
@@ -85,12 +85,6 @@ img{
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* MAIN CONTENT */
-.main-content{
-  flex-grow: 1;
-  margin-bottom: 57px;
 }
 
 
@@ -226,19 +220,41 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .hero-img-index{
-height: 696px;
+  height: 696px;
+}
+
+/* MAIN CONTENT */
+.main-content{
+  flex-grow: 1;
+  padding: 20px 20px 50px 20px;
 }
 
 /* FEATURE-SECTIONS */
 .feature-sections {
-  background-color: #fff;
-  padding: 20px;
+  background-color: var(--light-bg);
+  background-image: url(../img/light-bg.jpg);
+  padding-bottom: 20px;
   margin: 0;
 }
+
+/* RETINA BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .site-header-wrapper{
+    background-image: url(../img/light-bg@2x.jpg);
+
+  }
+}
+
 .collection-card {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: var(--collection-bg);
+  background-color: var(--light-bg);
 }
 .collection-card-title {
   font-size: 50px;
@@ -258,19 +274,36 @@ height: 696px;
   display: flex;
   align-items: center;
 }
+.collection-item-img{
+  flex-shrink: 0; /* kichrayib ketmasligi uchun*/
+  width: 450px;
+  height: 373px;
+  object-fit: cover;
+
+}
 .collection-item-info-card{
-  margin-right: 117px;
+  flex-grow: 1; /* Qolgan joyni qoplab olish uchun */
+  padding-left: 117px;
+  padding-right: 117px;
+}
+
+.collection-type-content:nth-child(odd) .collection-item-info-card{
+  padding-left: 117px;
+}
+
+.collection-type-content:nth-child(even) .collection-item-info-card{
+  padding-right: 117px;
+}
+
+.collection-type-content:nth-child(even){
+  flex-direction: row-reverse;
 
 }
 
 .collection-item-info-card-gran{
-  margin-left: 157px;
-  margin-right: 117px;
 }
 
 .collection-item-info-card-planalto{
-  margin-left: 157px;
-  margin-right: 97px;
 }
 
 .collection-item-img {
@@ -278,10 +311,8 @@ height: 696px;
 }
 
 .collection-item-img:first-child{
-  margin-right: 117px;
 }
 .collection-item-img:nth-child(3){
-  margin-right: 117px;
 }
 
 .collection-item-name {
@@ -315,7 +346,6 @@ height: 696px;
   background-position: 0 0;
   background-size: contain;
   content:"";
-  margin: 20px;
   margin-top: 0;
   margin-bottom: 60px;
 }
