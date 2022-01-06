@@ -90,6 +90,7 @@ img{
 
 /* SITE-HEADER */
 .site-header-hero-wrapper {
+  position: relative;
   background-image: url(../img/site-header-intro-bg.jpg);
 }
 
@@ -161,6 +162,7 @@ only screen and (                min-resolution: 2dppx) {
   opacity: 0.6;
 }
 .site-hero {
+
   display: flex;
   align-items: flex-start;
 }
@@ -173,6 +175,14 @@ only screen and (                min-resolution: 2dppx) {
   margin-left: 150px;
 
 }
+
+.hero-logo{
+  position: absolute;
+  border-radius: 50%;
+  top: 47px;
+  left: 638px;
+}
+
 .hero-heading {
   margin-bottom: 20px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -252,10 +262,15 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .collection-card {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--light-bg);
 }
+
+.leap-img{
+}
+
 .collection-card-title {
   font-size: 50px;
   line-height: 58px;
