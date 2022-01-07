@@ -268,7 +268,27 @@ only screen and (                min-resolution: 2dppx) {
   background-color: var(--light-bg);
 }
 
-.leap-img{
+.leap-left-top{
+  position: absolute;
+  top: 0;
+  left: -217px;
+}
+.leap-left-bottom{
+  position: absolute;
+  left: -201px;
+  bottom: 270px;
+}
+
+.leap-right-small{
+  position: absolute;
+  right: -210px;
+  bottom: 575px;
+}
+
+.leap-right{
+  position: absolute;
+  right: -328px;
+  bottom: 462px;
 }
 
 .collection-card-title {
@@ -355,6 +375,7 @@ only screen and (                min-resolution: 2dppx) {
 
 /* WHY CHOOSE US */
 .choice-section {
+  position: relative;
   height: 912px;
   background-image: url(../img/feature-section-bg.png);
   background-repeat: no-repeat;
@@ -364,6 +385,15 @@ only screen and (                min-resolution: 2dppx) {
   margin-top: 0;
   margin-bottom: 60px;
 }
+
+.trust-img{
+  position: absolute;
+  top: 233px;
+  left: 0px;
+  width: 140px;
+  height: 144px;
+}
+
 .choice-section-heading {
   padding-top: 50px;
   padding-bottom: 10px;
@@ -430,6 +460,7 @@ only screen and (                min-resolution: 2dppx) {
 
 /* TRIPLE-GREEN-GRID */
 .triple-green-grid-wrapper{
+  position: relative;
   height: 826px;
   background-image: url(../img/triple-green-bg.png);
   background-size: cover;
@@ -437,6 +468,15 @@ only screen and (                min-resolution: 2dppx) {
   background-repeat: no-repeat;
   content:"";
 }
+
+.but-first-coffee{
+position: absolute;
+top: 72px;
+right: 85px;
+width: 191px;
+height: 130px;
+}
+
 .triple-green-grid-heading {
   padding-top: 50px;
   margin-bottom: 80px;
